@@ -1,14 +1,12 @@
-UC02 : Nouveau Deck
+UC11 : Creer Deck
 
-Auteur : Orso et Clara
+Auteur : VoyageHearth Team
 
-Description : permet au joueur de céer un deck
+Description : permet au joueur de créer un deck
 
--------------------
+Acteur : Joueur connecté
 
-Acteur : utilisateur
-
-Precondition : l'utilisateur est connecté
+Precondition : Aucune
 
 Scenario Nominal :
 
@@ -29,7 +27,7 @@ Post-conditions: le systeme a enregistré la création du nouveau deck
 Alternative :
 
 	A3 : Nom deja existant :
-		en SN4 : le nom du deck entré par l'utilisateur existe deja, retourner en SN3.
+		en SN5 : le nom du deck entré par l'utilisateur existe deja, retourner en SN3.
 	
 	A4 : ajouter plusieurs cartes :
 		en SN11 retour en SN9
@@ -43,4 +41,4 @@ Exception :
 
 	E1: en SN4, SN9, SN11 l'utilisateur annule. Fin de l'interaction.
 	
-	E2: en SN2, il n'y a pas suffisament d'emplacement, le systeme affiche "trop de deck", fin interaction.
+	E2: en SN2, il n'y a pas suffisament d'emplacement, le systeme affiche "Il n'y a plus d'emplacement disponibles", fin d'interaction.
