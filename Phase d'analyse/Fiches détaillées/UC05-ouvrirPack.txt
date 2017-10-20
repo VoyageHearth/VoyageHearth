@@ -1,13 +1,12 @@
-UC02 : Ouvrir pack
+UC05 : Ouvrir pack
 
-Auteur : Oumeddour
+Auteur : VoyageHearth Team
 
-Description : Le joueur ouvre un pack reçu et
-              prend les cartes
+Description : Le joueur ouvre un pack et se voit attribué les cartes
               
-Acteur : Joueur
+Acteur : Joueur connecté
 
-Précondition : l'utilisateur est connecté.
+Précondition : Aucune
 
 Scénario nominal :
 
@@ -16,8 +15,7 @@ Scénario nominal :
     3. Le joueur sélectionne un pack en attente
     4. Le système affiche les 5 cartes contenues dans le pack ouvert
     
-    
-Postconditions : Le système ajoute le pack à la collection du joueur
+Postconditions : Le système ajoute les cartes contenues dans le pack à la collection du joueur
 
 Alternative :
 
@@ -25,7 +23,6 @@ Alternative :
     
 Exceptions :
 
-    E1 :
-        En SN2, aucun pack en attente d'ouverture
+    E1 : En SN2, aucun pack en attente d'ouverture
         
     E2 : En SN3, annulation de l'opération par le joueur

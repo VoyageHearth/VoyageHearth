@@ -1,0 +1,44 @@
+UC06 : Jouer partie 
+
+Auteur : VoyageHearth Team
+
+Description : Permet au joueur de joueur une partie
+
+Acteur : joueur connecté 
+
+Précondition : Aucune
+
+Scenario Nominal :
+
+    1. Le joueur clique sur le bouton « Nouvelle partie »
+    2. Le système affiche la liste des decks  
+	3. Le joueur choisit son deck parmi sa liste de decks  
+	4. Le système trouve la liste des adversaires de rang similaires (<=3 rang)
+	5. Le système affiche « Partie est commencée »
+	6. Le système transmet les deux decks et les identifiants des joueurs au moteur du jeu  
+	7. Le système détermine quel joueur a gagné 
+    8. Le système affiche « Victoire »  
+    9. Le système vérifie si le rang est inférieur à 100
+    10. Le système augmente le rang du joueur de 1
+    11. Le système vérifie qu'il s'agit de la 10ème partie jouée
+    12. La système vérifie que la dernière attribution d'un pack
+        a plus de 24h
+    13. Le système attribue le pack
+    14. Le système affiche "Fin de partie"
+    
+Post-conditions: Mise à jour du nombre de parties jouées 
+
+Alternative :
+
+	A1 : Défaite
+		En SN8 : le joueur a perdu la partie 
+        A1.1 Le système affiche  « Défaite  » et décrémente le rang du joueur de 1 (sauf s'il est à 0)
+    
+    A2: non attribution de pack
+        En SN11 : Moins de 10 parties jouée. Aller en SN15    
+	
+Exception :
+
+    E1 : Pas de decks disponibles
+        En SN2 il n y a aucune deck créé ou complet.
+        Le système affiche « vous n’avez pas de decks disponibles, créez un deck pour jouer » Cf.UC11 Créer deck. Fin d'interaction
