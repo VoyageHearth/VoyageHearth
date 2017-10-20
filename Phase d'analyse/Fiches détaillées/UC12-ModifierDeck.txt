@@ -1,14 +1,14 @@
-UC04 : modifier Deck
+UC12 : modifier Deck
 
-Auteur : Orso et Clara
+Auteur : VoyageHearth Team
 
 Description : permet au joueur de modifer un deck
 
 -------------------
 
-Acteur : utilisateur
+Acteur : Joueur connecté
 
-Precondition : l'utilisateur est connecté
+Precondition : Aucune
 
 Scenario Nominal :
 
@@ -18,7 +18,7 @@ Scenario Nominal :
 	4. Le systeme met à jour l'interface
 	5. L'utilisateur valide et cloture la modification du deck
 	
-Post-conditions: le systeme a enregistré la création du nouveau deck
+Post-conditions: le systeme a enregistré la modification du deck
 
 Alternative :
 
