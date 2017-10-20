@@ -1,0 +1,26 @@
+UC03 : Supprimer Deck
+
+Auteur : Orso et Clara
+
+Description : permet au joueur de céer un deck
+
+-------------------
+
+Acteur : utilisateur
+
+Precondition : l'utilisateur est connecté
+
+Scenario Nominal :
+
+	1. L'utilisateur choisit "supprimer deck"
+	2. Le systeme affiche "Supprimer le deck ?"
+	3. L'utilisateur choisit OUI
+	4. Le systeme supprime le deck
+	
+Post-conditions: le systeme a enregistré la suppression deck
+
+Alternative :
+
+Exception :
+
+	E1: en SN3 l'utilisateur choisit NON. Fin de l'interaction.

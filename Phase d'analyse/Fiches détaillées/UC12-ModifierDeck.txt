@@ -1,0 +1,35 @@
+UC04 : modifier Deck
+
+Auteur : Orso et Clara
+
+Description : permet au joueur de modifer un deck
+
+-------------------
+
+Acteur : utilisateur
+
+Precondition : l'utilisateur est connecté
+
+Scenario Nominal :
+
+	1. L'utilisateur choisit "modifier deck"
+	2. Le systeme affiche l'interface d'ajout de carte au deck (moitier de l'ecran le deck, l'autre la collection)
+	3. L'utilisateur selectionne une des cartes de la collection et la place dans son deck
+	4. Le systeme met à jour l'interface
+	5. L'utilisateur valide et cloture la modification du deck
+	
+Post-conditions: le systeme a enregistré la création du nouveau deck
+
+Alternative :
+
+	A4 : ajouter plusieurs cartes :
+		en SN5 retour en SN3
+	
+	A5 : supprimer une carte :
+		en SN3, l'utilisateur clique sur la croix rouge d'une carte du deck
+		le système supprime la carte du deck et met à jour l'interface
+		aller en SN4
+		
+Exception :
+
+	E1: en SN3, SN5 l'utilisateur annule. Fin de l'interaction.

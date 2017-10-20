@@ -1,0 +1,44 @@
+
+Liste des Use Cases (et numéros associés)
+
+UC01 : Créer un compte
+	Acteur: Joueur non-connecté
+
+UC02 : Se connecter
+	Acteur: Joueur non-connecté
+
+UC03 : Renseigner données bancaires
+	Acteur : Joueur connecté
+
+UC04 : Acheter Pack
+	Acteur : Joueur connecté
+
+UC05 : Ouvrir Pack
+	Acteur : Joueur connecté
+
+UC06 : Jouer partie
+	Acteur : Joueur connecté
+
+UC07 : Consulter collection de cartes
+	Acteur : Joueur connecté
+
+UC08 : Acheter carte
+	Acteur : Joueur connecté
+
+UC09 : Détruire carte
+	Acteur : Joueur connecté
+
+UC10 : consulter liste des decks
+	Acteur : Joueur connecté
+
+UC11 : Creer un deck
+	Acteur : Joueur connecté
+
+UC12 : Modifier un deck
+	Acteur : Joueur connecté
+
+UC13 : Supprimer un deck
+	Acteur : Joueur connecté
+
+UC14 : Acheter un emplacement de deck
+	Acteur : Joueur connecté

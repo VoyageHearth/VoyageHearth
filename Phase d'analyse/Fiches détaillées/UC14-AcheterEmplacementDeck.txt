@@ -1,0 +1,39 @@
+UC01 : acheter emplacement deck
+
+Auteur : Orso et Clara
+
+Description : permet au joueur d'acheter un emplacemnt de decks.
+
+-------------------
+
+Acteur : utilisateur
+
+Precondition : l'utilisateur est connecté
+
+Scenario Nominal :
+
+	1. L'utilisateur choisit "ajouter emplacement"
+	2. Le systeme affiche "voulez vous un nouvel emplacement de deck ?"
+	3. L'utilisateur accepte
+	4. Le systeme affiche "Le prix du nouvel emplacement est de 1.39eu / $1.99. Confirmer achat ?"
+	5. L'utilisateur confirme l'achat
+	6. Le systeme verifie si l'utilisateur a bien enregistré ses données bancaire
+	7. (transaction avec la banque)
+	8. Le systeme affiche "paiement accepté"
+	9. Le systeme affiche l'interface de la gestion de deck
+	
+Post-conditions: le systeme a ajouté un nouvel emplacement de deck a l'utilisateur
+
+Alternative :
+	A1 : en SN8. les données bancaire ne sont pas enregistré ses données bancaire
+		A1.1 Le systeme affiche "données bancaire non enregistré"
+		A1.2 aller en UC??
+		A1.3 retour en SN9
+
+Exception :
+
+	E1: en SN3, SN4 l'utilisateur annule. Fin de l'interaction.
+	
+	E2: en SN7, la transaction avec la banque a echoué
+		E2.1 le systeme "affiche erreur de transaction"
+		E2.2 fin de l'a transaction
