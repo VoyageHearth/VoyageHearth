@@ -1,14 +1,14 @@
-UC03 : Supprimer Deck
+UC13 : Supprimer Deck
 
-Auteur : Orso et Clara
+Auteur : VoyageHearth Team
 
-Description : permet au joueur de céer un deck
+Description : permet au joueur de supprimer un deck
 
 -------------------
 
-Acteur : utilisateur
+Acteur : Joueur connecté
 
-Precondition : l'utilisateur est connecté
+Precondition : Aucune
 
 Scenario Nominal :
 
@@ -18,8 +18,6 @@ Scenario Nominal :
 	4. Le systeme supprime le deck
 	
 Post-conditions: le systeme a enregistré la suppression deck
-
-Alternative :
 
 Exception :
 
