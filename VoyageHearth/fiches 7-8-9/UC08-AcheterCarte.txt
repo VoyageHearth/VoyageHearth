@@ -1,0 +1,30 @@
+UC08
+
+Titre : Acheter une carte
+Acteur : Joueur
+
+Préconditions : Aucune
+
+Scénario nominal :
+	1-L'acteur clique sur « Acheter une carte »
+	2-Le système affiche la liste de toutes les cartes du jeu
+	3-L'acteur sélectionne une carte
+	4-Le système vérifie que le joueur a assez de joyaux
+	5-Le système affiche « voulez-vous acheter cette carte  pour
+		20 joyaux si la carte est commune
+		50 joyaux si la carte est rare
+		200 joyaux si la carte est légendaire»
+	6-L'acteur choisit « OUI »
+	7-Le système ajoute la carte de la collection de l'acteur
+	8-Le système débite le nombre de joyaux du joueur de la valeur de la carte
+	9-Le système affiche « Voulez vous acheter une autre carte »
+	10-L'acteur répond non
+	11-Fin
+
+Post-condition : La collection de l'acteur à été mise à jour ainsi que le nombre de ses joyaux.
+
+Exceptions :
+E1 : Annulation
+	1-En SN3  ou en SN6: L'acteur choisit d'annuler
+	2-Fin de l'interaction
+	

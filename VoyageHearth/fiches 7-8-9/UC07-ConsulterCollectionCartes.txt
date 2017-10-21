@@ -1,0 +1,27 @@
+UC07 :
+
+Titre : Consulter collection de cartes
+Acteur : Joueur connecté
+
+Préconditions : le joueur est authentifié
+
+Scénario nominal :
+	1-L'acteur clique sur : « Ma collection »
+	2-Le système retrouve les cartes de l'acteur
+	3-Le système affiche la liste des cartes de l'acteur avec le nombre d’occurrences de chaque 	    carte, un boutton d'acheter une carte et  un boutton retour
+	4-L'acteur clique sur « Retour »
+	5-Fin
+
+Post-condition : Aucune
+
+Alternatives :
+A1 : Détruire une carte
+	1-En SN4, l'acteur clique sur une carte
+	2-Aller sur UC11
+	3-Revenir en SN2
+
+A2 : Acheter une carte
+	1-En SN4, l'acteur clique sur « Acheter une carte »
+	2-Aller en UC7
+	3-revenir en SN2
+	

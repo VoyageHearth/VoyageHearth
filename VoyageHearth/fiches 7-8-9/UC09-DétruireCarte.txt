@@ -1,0 +1,31 @@
+UC09
+
+Titre : Détruire une carte
+Acteur : Joueur connecté
+
+Préconditions : Aucune
+
+Scénario nominal :
+	1-L'acteur sélectionne une carte
+	2-Le système vérifie que la carte n'est pas basique
+	3-Le système affiche « voulez-vous supprimer cette carte  pour
+		2 joyaux si la carte est commune
+		5 joyaux si la carte est rare
+		20 joyaux si la carte est légendaire»
+	4-L'acteur choisit « OUI »
+	5-Le système retire la carte de la collection
+	6-Le système augmente le nombre de joyaux du joueur de la valeur de la carte
+	7-Fin
+
+Post-condition : La collection de l'acteur à été mise à jour ainsi que le nombre de ses joyaux.
+
+Exceptions :
+E1 : La carte est basique
+	1-En SN3 : Le test échoue
+	2-Le système affiche « Vous ne pouvez pas détruire une carte basique »
+	3-Fin de l'interaction
+
+E2 : Annulation
+	1-En SN4 : L'acteur répond « Non »
+	2- Fin de l'intéraction
+	
