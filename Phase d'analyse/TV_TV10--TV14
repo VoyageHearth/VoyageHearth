@@ -1,0 +1,175 @@
+TV10 : consulter la liste de decks
+
+Contexte : Weasel  est un joueur connecté, il possède 1 decks et 2 emplacements de decks non utilisé
+
+Entrée : aucune
+
+Scénario :
+	1. Weasel choisit « Consulter la liste de Deck »
+
+Résultat attendu :
+	- Le système affiche l'interface de consultation de decks ou les 1 decks de Weasel sont 	présent ainsi que les 2 emplacements de decks non utilisé.
+
+Moyen de vérification :
+	- Visuel affichage
+	- lister les decks de Weasel
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+TV11 : Créer un deck
+
+Contexte : Weasel  est un joueur connecté, il possède 3 emplacements de deck libre et ne possede pas encore de deck
+
+Entrée : nomDeck = «WarAggro», carteAdd=Scourgelord Garrosh
+
+Scénario :
+	1.  Weasel clique sur le premier emplacement vide
+	2.  Weasel saisit nomDeck
+	3.  Weasel choisit la carte carteAdd
+	4.  Weasel enregistre son nouveau deck
+
+Résultat attendu : 
+	-  Weasel possède 1 deck nommé WarAggro contenant uniquement la carte Scourgelord Garrosh ainsi que 2 emplacements de deck vide
+	
+Moyen de vérification : 
+	- affichage visuel
+	- lister les decks de  Weasel => un deck WarAggro avec Scourgelord Garrosh
+	- tester TV11.1
+
+--------------------------------------------------------------------------------------------------------
+
+TV11.1 : verification de création de decks
+
+Contexte : faire après TV11. Weasel est un joueur connecté, il possède 1 decks nommé « WarAggro » contenant Scourgelord Garrosh ainsi que 2 emplacements de decks non utilisé
+
+Entrée : aucune
+
+Scénario :
+	1. Weasel choisit « Consulter la liste de Deck »
+
+Résultat attendu :
+	- Le système affiche l'interface de consultation de decks ou le decks « WarAggro » de Weasel est présent et contient la carte Scourgelord Garrosh ainsi que les 2 emplacements de decks non utilisé
+
+Moyen de vérification :
+	- Visuel affichage
+	- lister les decks de Weasel => un deck WarAggro avec Scourgelord Garrosh
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+TV12 : Modifier deck
+
+Contexte : Weasel est un joueur connecté, il possède 1 decks nommé « WarAggro » contenant la carte Scourgelord Garrosh et il possède dans sa collection la carteGrommash Hellscream. Il possède egalement 2 emplacements de decks non utilisé
+
+Entrée : deckM = WarAggro, carteDelete=Scourgelord Garrosh, carteAdd=Grommash Hellscream
+
+Scénario :
+	1. Weasel clique sur « Edit » du deck deckM
+	2. Weasel clique sur « Delete » de la carte carteDelete contenu dans son deck
+	3. Weasel clique sur « Add » de la carte carteAdd contenu dans sa collection
+
+Résultat attendu :
+	- Le deck « WarAggro » de Weasel ne contient plus la carte  Scourgelord Garrosh mais contient la carte Grommash Hellscream. Les deux emplacement de deck vide reste inchangé
+
+Moyen de vérification :
+	- affichage visuel
+	- lister les decks de  Weasel => un deck WarAggro avec  Grommash Hellscream
+	- tester TV12.1
+
+--------------------------------------------------------------------------------------------------------
+
+TV12.1 : verification de modification de deck
+
+Contexte : faire après TV12. Weasel est un joueur connecté, il possède 1 decks nommé « WarAggro » contenant Grommash Hellscream ainsi que 2 emplacements de decks non utilisé
+
+Entrée : aucune
+
+Scénario :
+	1. Weasel choisit « Consulter la liste de Deck »
+
+Résultat attendu :
+	- Le système affiche l'interface de consultation de decks ou le decks « WarAggro » de Weasel est présent et contient la carte Grommash Hellscream ainsi que les 2 emplacements de decks non utilisé
+
+Moyen de vérification :
+	- Visuel affichage
+	- lister les decks de  Weasel => un deck WarAggro avec  Grommash Hellscream
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+TV13 : Supprimer un deck
+
+Contexte : Weasel est un joueur connecté, il possède 1 decks nommé « WarAggro » contenant Grommash Hellscream ainsi que 2 emplacements de decks non utilisé
+
+Entrée : deckS = WarAggro
+
+Scénario :
+	1. Weasel choisit « delete » du deck deckS 
+	2. Weasel choisit OUI
+
+Résultat attendu :
+	- Weasel ne possède plus le deck nommé « WarAggro », il possède 3 emplacements de 	deck libre
+
+Moyen de vérification :
+	- affichage visuel
+	- lister les decks de Weasel => vide
+	- tester TV13.1
+
+--------------------------------------------------------------------------------------------------------
+
+TV13.1 : verification de suppression de deck
+
+Contexte : faire après TV13. Weasel est un joueur connecté, il possède 3 emplacements de decks non utilisé
+
+Entrée : aucune
+
+Scénario :
+	1. Weasel choisit « Consulter la liste de Deck »
+
+Résultat attendu :
+	- Le système affiche l'interface de consultation de decks ou les 3 emplacements de decks non utilisé sont affiché
+
+Moyen de vérification :
+	- Visuel affichage
+	- lister les decks de Weasel => vide
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+TV14 : Acheter emplacement de deck
+
+Contexte : Weasel est un joueur connecté, il possède 3 decks nommé « WarAggro », « WinnyWarlock » et « ChaMurloc ».
+
+Entrée : aucune
+
+Scénario :
+	1. Weasel choisit « Acheter emplacement » 
+	2. Weasel choisit OUI
+	3. Weasel choisit « Confirmer achat »
+
+Résultat attendu :
+	- Weasel possède 3 decks nommé « WarAggro », « WinnyWarlock » et « ChaMurloc » et un emplacement de deck vide
+
+Moyen de vérification :
+	- affichage visuel
+	- lister les decks de Weasel => « WarAggro », « WinnyWarlock », « ChaMurloc »
+	- tester TV14.1
+
+--------------------------------------------------------------------------------------------------------
+
+TV14.1 : verification d'achat d'emplacement de deck
+
+Contexte : faire après TV14. Weasel est un joueur connecté, il possède 3 decks nommé « WarAggro », « WinnyWarlock » et « ChaMurloc » et un emplacement de deck vide
+
+Entrée : aucune
+
+Scénario :
+	1. Weasel choisit « Consulter la liste de Deck »
+
+Résultat attendu :
+	- Le système affiche l'interface de consultation de decks ou les 3 decks de Weasel et l'emplacementde deck vide sont présent
+
+Moyen de vérification :
+	- Visuel affichage
+	- lister les decks de Weasel => « WarAggro », « WinnyWarlock », « ChaMurloc »
