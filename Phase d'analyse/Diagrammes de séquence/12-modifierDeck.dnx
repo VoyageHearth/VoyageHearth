@@ -148,7 +148,7 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_mp_fkbW7EeeH-6eCwqMd1Q" type="MessageNameLabel">
         <children xmi:type="notation:BasicDecorationNode" xmi:id="_mp_fkrW7EeeH-6eCwqMd1Q" type="Stereotype"/>
         <children xmi:type="notation:BasicDecorationNode" xmi:id="_mp_fk7W7EeeH-6eCwqMd1Q" type="Name"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mp_flLW7EeeH-6eCwqMd1Q" x="31" y="-2316"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mp_flLW7EeeH-6eCwqMd1Q" x="31" y="-2219"/>
       </children>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mp_flbW7EeeH-6eCwqMd1Q" points="[0, 0, 0, -13]$[0, 13, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mp_flrW7EeeH-6eCwqMd1Q" id="745489260:360"/>
@@ -249,7 +249,7 @@
         <message xmi:id="_yOIYgLW4EeeH-6eCwqMd1Q" name="retraitCarte(idDeck, idCarte)" messageSort="reply" receiveEvent="_yOIYgbW4EeeH-6eCwqMd1Q" sendEvent="_yN_OlLW4EeeH-6eCwqMd1Q" connector="_RgSpWrW4EeeH-6eCwqMd1Q"/>
         <message xmi:id="_U07NYLW5EeeH-6eCwqMd1Q" name="retraitCarteDeck(idDeck, idCarte)" receiveEvent="_U07NYrW5EeeH-6eCwqMd1Q" sendEvent="_U07NYbW5EeeH-6eCwqMd1Q" connector="_RgSpV7W4EeeH-6eCwqMd1Q"/>
         <message xmi:id="_l6GloLW5EeeH-6eCwqMd1Q" name="afficherModificationDeck(idDeck)" receiveEvent="_l6GlorW5EeeH-6eCwqMd1Q" sendEvent="_l6GlobW5EeeH-6eCwqMd1Q" connector="_RgSpV7W4EeeH-6eCwqMd1Q"/>
-        <message xmi:id="_mp1umrW7EeeH-6eCwqMd1Q" name="retraitCarteDeck(idDeck, idCarte)" receiveEvent="_mp1ukbW7EeeH-6eCwqMd1Q" sendEvent="_mp1ukLW7EeeH-6eCwqMd1Q" connector="_RgSpV7W4EeeH-6eCwqMd1Q"/>
+        <message xmi:id="_mp1umrW7EeeH-6eCwqMd1Q" name="ajoutCarteDeck(idDeck, idCarte)" receiveEvent="_mp1ukbW7EeeH-6eCwqMd1Q" sendEvent="_mp1ukLW7EeeH-6eCwqMd1Q" connector="_RgSpV7W4EeeH-6eCwqMd1Q"/>
         <message xmi:id="_mp1um7W7EeeH-6eCwqMd1Q" name="afficherModificationDeck(idDeck)" receiveEvent="_mp1ulbW7EeeH-6eCwqMd1Q" sendEvent="_mp1ulLW7EeeH-6eCwqMd1Q" connector="_RgSpV7W4EeeH-6eCwqMd1Q"/>
         <message xmi:id="_mp1unLW7EeeH-6eCwqMd1Q" name="ajoutCarte(idDeck, idCarte)" messageSort="reply" receiveEvent="_mp1umbW7EeeH-6eCwqMd1Q" sendEvent="_mp1umLW7EeeH-6eCwqMd1Q" connector="_RgSpWrW4EeeH-6eCwqMd1Q"/>
         <message xmi:id="_mp1unbW7EeeH-6eCwqMd1Q" name="ajoutCarte(idDeck, idCarte)" receiveEvent="_mpskorW7EeeH-6eCwqMd1Q" sendEvent="_mpskobW7EeeH-6eCwqMd1Q" connector="_RgSpWrW4EeeH-6eCwqMd1Q"/>
